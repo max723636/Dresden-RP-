@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dresden RP Discord</title>
 <style>
-    /* Hintergrund */
+    /* Dunkler, moderner Hintergrund */
     body {
         margin: 0;
         padding: 0;
         font-family: Arial, sans-serif;
-        background: linear-gradient(135deg, #6a11cb, #2575fc);
+        background: linear-gradient(135deg, #1a1a2e, #162447);
         color: #fff;
         display: flex;
         flex-direction: column;
@@ -28,7 +28,8 @@
         max-width: 700px;
         font-size: 18px;
         line-height: 1.6;
-        margin: 20px auto;
+        margin: 20px auto; /* zentriert und Abstand links/rechts */
+        padding: 0 20px;   /* kleiner Abstand zu den Rändern */
     }
 
     hr {
@@ -43,17 +44,13 @@
         text-align: left;
         max-width: 700px;
         margin: 0 auto 30px auto;
-        padding: 0;
+        padding: 0 20px;
         list-style: none;
     }
 
     ul li {
         margin: 8px 0;
         font-size: 18px;
-    }
-
-    .emoji {
-        margin-right: 8px;
     }
 
     /* Discord Button */
@@ -68,19 +65,28 @@
         cursor: pointer;
         text-decoration: none;
         margin-bottom: 50px;
-        transition: background 0.3s;
+        transition: all 0.3s ease;
+        box-shadow: 0 0 10px rgba(255,255,255,0.2);
     }
 
     .discord-button:hover {
         background-color: #333;
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(255,255,255,0.5);
     }
 
-    /* Server Profilbild */
+    /* Server Profilbild mit Glow */
     .server-image {
         max-width: 250px;
         border-radius: 15px;
         margin: 30px 0;
-        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        box-shadow: 0 0 30px rgba(255,255,255,0.4); /* Glow Effekt */
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .server-image:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 50px rgba(255,255,255,0.7);
     }
 
 </style>
@@ -125,7 +131,7 @@ Tauche ein in realistisches Roleplay, spannende Szenarien und eine aktive Commun
 <ul>
     <li>😄 Freude am Roleplay</li>
     <li>🤝 Respekt, Freundlichkeit & Teamgeist</li>
-    <li>🗣️ Aktivität und Motivation</li>
+    <li>💬 Aktivität und Motivation</li>
 </ul>
 
 <a href="https://discord.gg/ZDwjNw6d6B" target="_blank" class="discord-button">Jetzt dem Discord beitreten!</a>
